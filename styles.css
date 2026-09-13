@@ -37,7 +37,7 @@ body.intro-complete .intro-screen {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.7s ease, visibility 0.7s ease;
+  transition: opacity 0.65s ease, visibility 0.65s ease;
 }
 
 body.intro-complete {
@@ -51,11 +51,11 @@ body.intro-complete {
   display: grid;
   place-items: center;
   background:
-    linear-gradient(180deg, rgba(18, 72, 124, 0.45), rgba(18, 72, 124, 0.28)),
-    radial-gradient(circle at center, rgba(255,255,255,0.18), rgba(255,255,255,0.05) 28%, rgba(0,0,0,0.12) 100%);
+    linear-gradient(180deg, rgba(14, 60, 102, 0.38), rgba(10, 24, 45, 0.2)),
+    radial-gradient(circle at center, rgba(255,255,255,0.12), rgba(255,255,255,0.02) 28%, rgba(0,0,0,0.12) 100%);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  transition: opacity 0.7s ease, visibility 0.7s ease;
+  transition: opacity 0.65s ease, visibility 0.65s ease;
 }
 
 .intro-window {

@@ -63,11 +63,17 @@ if (introScreen) {
     document.body.classList.add('intro-complete');
   };
 
-  window.addEventListener('load', () => {
+  const startIntro = () => {
     setTimeout(() => {
       hideIntro();
-    }, 2600);
-  }, { once: true });
+    }, 1500);
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', startIntro, { once: true });
+  } else {
+    startIntro();
+  }
 }
 
 if (productGrid) {
