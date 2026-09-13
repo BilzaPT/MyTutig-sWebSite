@@ -52,9 +52,22 @@ const priceTable = [
 const productGrid = document.querySelector('#product-grid');
 const priceTableBody = document.querySelector('#price-table-body');
 const yearEl = document.querySelector('#year');
+const introScreen = document.querySelector('#intro-screen');
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
+}
+
+if (introScreen) {
+  const hideIntro = () => {
+    document.body.classList.add('intro-complete');
+  };
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      hideIntro();
+    }, 2600);
+  }, { once: true });
 }
 
 if (productGrid) {
